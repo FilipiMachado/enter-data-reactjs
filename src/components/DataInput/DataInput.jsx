@@ -6,9 +6,9 @@ const DataInput = () => {
   return (
     <>
       <div className="data-container">
-        <p>Username</p>
+        <p className="user-data">Username</p>
         <input placeholder="Enter your name..."></input>
-        <p>Age (Years)</p>
+        <p className="user-data">Age (Years)</p>
         <input placeholder="Add you age..."></input>
       </div>
     </>

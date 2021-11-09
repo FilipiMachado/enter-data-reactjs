@@ -1,4 +1,11 @@
 .data-container {
     background-color: #FFFFFF;
     border-radius: 10px;
+    padding: 50px;
+}
+
+.user-data {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 600;
 }
