@@ -6,10 +6,18 @@ const DataInput = () => {
   return (
     <>
       <div className="data-container">
-        <p className="user-data">Username</p>
-        <input placeholder="Enter your name..."></input>
-        <p className="user-data">Age (Years)</p>
-        <input placeholder="Add you age..."></input>
+        <form className="data-container__block">
+          <p className="data-container__user">Username</p>
+          <input
+            className="data-container__input"
+            placeholder="Enter your name..."
+          ></input>
+          <p className="data-container__user">Age (Years)</p>
+          <input
+            className="data-container__input"
+            placeholder="Add you age..."
+          ></input>
+        </form>
       </div>
     </>
   );

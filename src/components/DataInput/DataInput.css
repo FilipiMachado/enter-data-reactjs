@@ -1,11 +1,26 @@
 .data-container {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    padding: 50px;
+    display: flex;
 }
 
-.user-data {
+.data-container__block {
+    display: inline-block;
+    align-items: center;
+    margin: auto;
+    width: 500px;
+    height: 200px;
     background-color: #FFFFFF;
     border-radius: 10px;
-    font-weight: 600;
+}
+
+.data-container__user {
+    display: flex;
+    justify-content: left;
+    background-color: #FFFFFF;
+    margin: 10px;
+}
+
+.data-container__input {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 }
