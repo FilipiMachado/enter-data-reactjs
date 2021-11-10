@@ -1,6 +1,6 @@
 // Components
-import Modal from "./components/Modal/Modal";
 import DataInput from "./components/DataInput/DataInput";
+import Modal from "./components/Modal/Modal";
 // Styles
 import "./App.css";
 
