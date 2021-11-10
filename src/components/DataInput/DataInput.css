@@ -1,5 +1,7 @@
 .data-container {
     display: flex;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
 }
 
 .data-container__block {
@@ -16,8 +18,8 @@
     display: flex;
     justify-content: left;
     background-color: #FFFFFF;
-
     margin: 10px;
+    
 }
 
 .data-container__input {
@@ -26,6 +28,6 @@
     border: 1px solid grey;
     background-color: #FFFFFF;
     width: 95%;
-    height: 30px; 
+    height: 30px;
     margin: 10px;
 }
