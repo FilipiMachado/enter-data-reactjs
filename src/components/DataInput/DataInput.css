@@ -16,11 +16,16 @@
     display: flex;
     justify-content: left;
     background-color: #FFFFFF;
+
     margin: 10px;
 }
 
 .data-container__input {
     display: flex;
     justify-content: center;
+    border: 1px solid grey;
+    background-color: #FFFFFF;
+    width: 95%;
+    height: 30px; 
     margin: 10px;
 }
