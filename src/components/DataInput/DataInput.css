@@ -1,17 +1,18 @@
 .data-container {
     display: flex;
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
-    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
 }
 
 .data-container__block {
     display: inline-block;
     align-items: center;
     margin: auto;
+    margin-top: 15px;
     width: 500px;
     height: 200px;
     background-color: #FFFFFF;
     border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
 }
 
 .data-container__user {
@@ -19,6 +20,7 @@
     justify-content: left;
     background-color: #FFFFFF;
     margin: 10px;
+    font-weight: 600;
 }
 
 .data-container__input {
