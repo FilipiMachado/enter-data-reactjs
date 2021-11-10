@@ -17,7 +17,9 @@ const DataInput = () => {
             className="data-container__input"
             placeholder="Add you age..."
           ></input>
-          <button className="data-container__button">Add User</button>
+          <button type="submit" className="data-container__button">
+            Add User
+          </button>
         </form>
       </div>
     </>
