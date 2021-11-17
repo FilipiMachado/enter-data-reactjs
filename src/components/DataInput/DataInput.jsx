@@ -5,12 +5,12 @@ import "./DataInput.css";
 const DataInput = () => {
   const [dataInput, setDataInput] = useState();
 
-
+  const dataInputHandler = (data) => {};
 
   return (
     <>
       <div className="data-container">
-        <form onSubmit={()=> {}} className="data-container__block">
+        <form onSubmit={() => {}} className="data-container__block">
           <p className="data-container__user">Username</p>
           <input
             className="data-container__input"
