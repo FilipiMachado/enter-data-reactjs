@@ -11,7 +11,7 @@ const data = [
 ];
 
 const DataInput = () => {
-  const [userDataInput, setUserDataInput] = useState();
+  const [userDataInput, setUserDataInput] = useState(data);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -40,11 +40,14 @@ const DataInput = () => {
           </button>
         </form>
       </div>
-      <ul>
-        {data.map((data) => {
-          return <Data user={data.user} age={data.age} key={data.id} />;
-        })}
-      </ul>
+      {data.length === 0 && <p>You don't have data</p>}
+      {data.length > 0 && (
+        <ul>
+          {data.map((data) => {
+            return <Data user={data.user} age={data.age} key={data.id} />;
+          })}
+        </ul>
+      )}
     </>
   );
 };
