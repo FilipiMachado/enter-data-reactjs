@@ -4,6 +4,12 @@ import Data from "../Data/Data";
 // Styles
 import "./DataInput.css";
 
+const data = [
+  { user: "MahBoeh", age: "20", id: 1 },
+  { user: "Chrono", age: "48", id: 2 },
+  { user: "Biluguinha", age: "35", id: 3 },
+];
+
 const DataInput = () => {
   const [userDataInput, setUserDataInput] = useState();
 
@@ -34,7 +40,7 @@ const DataInput = () => {
           </button>
         </form>
       </div>
-      <Data />
+      <Data user="huehue" age="12" />
     </>
   );
 };
