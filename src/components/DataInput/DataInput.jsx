@@ -40,8 +40,11 @@ const DataInput = () => {
           </button>
         </form>
       </div>
-      <Data user="Mewsalot" age="12" />
-      <Data user="HackNFerro" age="25" />
+      <ul>
+        {data.map((data) => {
+          return <Data user={data.user} age={data.age} key={data.id} />;
+        })}
+      </ul>
     </>
   );
 };
