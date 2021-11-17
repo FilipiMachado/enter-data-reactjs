@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 // Styles
 import "./DataInput.css";
 
 const DataInput = () => {
+  const [dataInput, setDataInput] = useState();
+
+
+
   return (
     <>
       <div className="data-container">
-        <form className="data-container__block">
+        <form onSubmit={()=> {}} className="data-container__block">
           <p className="data-container__user">Username</p>
           <input
             className="data-container__input"
