@@ -40,7 +40,8 @@ const DataInput = () => {
           </button>
         </form>
       </div>
-      <Data user="huehue" age="12" />
+      <Data user="Mewsalot" age="12" />
+      <Data user="HackNFerro" age="25" />
     </>
   );
 };

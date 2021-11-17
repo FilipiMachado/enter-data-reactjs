@@ -1,14 +1,16 @@
 import React from "react";
+// Styles
+import "./Data.css";
 
 const Data = ({ user, age }) => {
   return (
-    <div>
+    <>
       <ul>
         <li>
           My name is {user} and my age is {age}
         </li>
       </ul>
-    </div>
+    </>
   );
 };
 
