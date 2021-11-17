@@ -33,7 +33,7 @@ const DataInput = () => {
           <input
             className="data-container__input"
             type="number"
-            placeholder="Enter your age..."
+            placeholder="Enter your age"
           />
           <button type="submit" className="data-container__button">
             Add User
