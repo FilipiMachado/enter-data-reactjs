@@ -7,7 +7,7 @@ const Data = ({ user, age }) => {
     <>
       <ul>
         <li>
-          My name is {user} and my age is {age}
+          My name is {user} and my age is {age}.
         </li>
       </ul>
     </>

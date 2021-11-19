@@ -11,29 +11,40 @@ const data = [
 ];
 
 const DataInput = () => {
-  const [userDataInput, setUserDataInput] = useState(data);
+  const [enteredUser, setEnteredUser] = useState("");
+  const [enteredAge, setEnteredAge] = useState("");
 
-  const handleSubmit = (e) => {
+  const submitHandler = (e) => {
     e.preventDefault();
+  };
 
-    setUserDataInput(() => {});
+  const usernameChangeHandler = (e) => {
+    setEnteredUser(e.target.value);
+    console.log(e.target.value)
+  };
+
+  const ageChangeHandler = (e) => {
+    setEnteredUser(e.target.value);
+    console.log(e.target.value)
   };
 
   return (
     <>
       <div className="data-container">
-        <form onSubmit={handleSubmit} className="data-container__block">
+        <form onSubmit={submitHandler} className="data-container__block">
           <p className="data-container__user">Username:</p>
           <input
             className="data-container__input"
             type="text"
             placeholder="Enter your name..."
+            onChange={usernameChangeHandler}
           />
           <p className="data-container__user">Age (Years):</p>
           <input
             className="data-container__input"
             type="number"
             placeholder="Enter your age"
+            onChange={ageChangeHandler}
           />
           <button type="submit" className="data-container__button">
             Add User
