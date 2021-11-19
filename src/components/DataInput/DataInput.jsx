@@ -17,6 +17,8 @@ const DataInput = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     console.log(enteredUser, enteredAge);
+    setEnteredUser("");
+    setEnteredAge("");
   };
 
   const usernameChangeHandler = (e) => {
@@ -33,16 +35,20 @@ const DataInput = () => {
         <form onSubmit={submitHandler} className="data-container__block">
           <p className="data-container__user">Username:</p>
           <input
+            id="username"
             className="data-container__input"
             type="text"
             placeholder="Enter your name..."
+            value={enteredUser}
             onChange={usernameChangeHandler}
           />
           <p className="data-container__user">Age (Years):</p>
           <input
+            id="age"
             className="data-container__input"
             type="number"
             placeholder="Enter your age"
+            value={enteredAge}
             onChange={ageChangeHandler}
           />
           <button type="submit" className="data-container__button">
