@@ -16,7 +16,13 @@ const DataInput = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(enteredUser, enteredAge);
+
+    if (enteredUser.trim().length === 0 || enteredAge.trim().length === 0) {
+      return;
+    }
+    if (enteredAge < 1) {
+      return;
+    }
     setEnteredUser("");
     setEnteredAge("");
   };
@@ -64,6 +70,7 @@ const DataInput = () => {
           })}
         </ul>
       )}
+      <Data />
     </>
   );
 };
