@@ -16,16 +16,15 @@ const DataInput = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
+    console.log(enteredUser, enteredAge);
   };
 
   const usernameChangeHandler = (e) => {
     setEnteredUser(e.target.value);
-    console.log(e.target.value)
   };
 
   const ageChangeHandler = (e) => {
-    setEnteredUser(e.target.value);
-    console.log(e.target.value)
+    setEnteredAge(e.target.value);
   };
 
   return (
