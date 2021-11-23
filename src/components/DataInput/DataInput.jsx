@@ -13,6 +13,7 @@ const data = [
 const DataInput = () => {
   const [enteredUser, setEnteredUser] = useState("");
   const [enteredAge, setEnteredAge] = useState("");
+  const [dataList, setDataList] = useState("");
 
   const submitHandler = (e) => {
     e.preventDefault();
